@@ -11,6 +11,11 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="logo"><strong>Crypto Co</strong></div>
+    
+    <!-- Hamburger Icon -->
+    <div class="nav-links-mobile">&#9776;</div>
+
+    <!-- Navigation Links -->
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="crypto.html">Crypto</a></li>
@@ -41,18 +46,6 @@
         <h2>Decentralized Finance Explained</h2>
         <p>DeFi is changing the way we think about financial systems. Here's what you need to know.</p>
       </article>
-      <article>
-        <h2>Exploring Bitcoin: Beyond the Basics</h2>
-        <p>Bitcoin isn't just a currency—it's an evolving asset with significant implications for global finance.</p>
-      </article>
-      <article>
-        <h2>The Role of Ethereum in Smart Contracts</h2>
-        <p>Ethereum introduced smart contracts, which automate transactions. Let’s dive into how it works and its impact.</p>
-      </article>
-      <article>
-        <h2>Risks and Rewards of Investing in Crypto</h2>
-        <p>While crypto offers high returns, it’s also highly volatile. Here’s what to keep in mind when investing in digital assets.</p>
-      </article>
     </section>
   </main>
 
@@ -60,5 +53,14 @@
   <footer>
     <p>&copy; 2025 Crypto Co. All Rights Reserved.</p>
   </footer>
+
+  <!-- Include JavaScript for mobile menu toggle -->
+  <script>
+    document.querySelector('.nav-links-mobile').addEventListener('click', function() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
 </body>
 </html>
+
