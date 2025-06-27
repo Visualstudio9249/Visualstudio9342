@@ -16,7 +16,7 @@ nav {
   padding: 20px 40px;
   background: #2d3e50;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  flex-wrap: wrap; /* Allow wrapping for mobile screens */
+  flex-wrap: wrap;
 }
 
 nav .logo {
@@ -44,6 +44,11 @@ nav a {
 
 nav a:hover {
   color: #ffffff;
+}
+
+/* Hamburger Menu (Hidden by default) */
+.nav-links-mobile {
+  display: none;
 }
 
 /* Hero Section */
@@ -112,11 +117,18 @@ footer {
   nav .nav-links {
     flex-direction: column;
     margin-top: 10px;
+    display: none; /* Hide links initially */
   }
 
   nav .nav-links li {
-    margin-right: 0;
     margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  nav .nav-links-mobile {
+    display: block; /* Show hamburger menu */
+    cursor: pointer;
+    font-size: 24px;
   }
 
   /* Hero Section */
@@ -170,5 +182,4 @@ footer {
     font-size: 14px;
   }
 }
-
 
